@@ -1,0 +1,21 @@
+extends ../layouts/default
+include ../../components/breadcrumb/breadcrumb
+include ../../components/promo/promo
+include ../../components/process/process
+include ../../components/about/about
+include ../../components/gallery/gallery
+include ../../components/feedback/feedback
+include ../../components/installation/installation
+
+
+block variables
+
+block content
+  h1 Монтаж дымоходов
+  +breadcrumb()
+  +promo()
+  +process()
+  +about()
+  +feedback()
+  +installation()
+  +gallery()

@@ -1,0 +1,5 @@
+mixin list-data(data)
+    ul.list-data__list
+      each item in data
+        li.list-data__item
+          a.list-data__link(href= item.url)= item.text

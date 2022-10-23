@@ -1,0 +1,47 @@
+include ../section-title/section-title
+include ../list-data/list-data
+include ../social-bar/social-bar
+
+-
+  var catalogs = [
+    { url: "/mock-address", text: "Дымоходы" },
+    { url: "/mock-address", text: "Дымососы" },
+    { url: "/mock-address", text: "Печи для дома" },
+    { url: "/mock-address", text: "Печи для бани" },
+    { url: "/mock-address", text: "Камины" },
+    { url: "/mock-address", text: "Силикат кальция" },
+    { url: "/mock-address", text: "Котлы" },
+    { url: "/mock-address", text: "Ещё" },
+  ];
+-
+  var info = [
+    { url: "/mock-address", text: "Каталог" },
+    { url: "/mock-address", text: "Установка и монтаж" },
+    { url: "/mock-address", text: "Отзывы" },
+    { url: "/mock-address", text: "Ликвидация товара" },
+    { url: "/mock-address", text: "Полезное" },
+    { url: "/mock-address", text: "Контакты" },
+    { url: "/mock-address", text: "Оплата и доставка" },
+  ];
+
+mixin footer()
+
+  footer.footer
+    .container
+      .footer__content
+        section.footer__catalog
+          +section-title("Каталог")
+          +list-data(catalogs)
+        section.footer__info
+          +section-title("Информация")
+          +list-data(info)
+        section.footer__time
+          +section-title("Время работы")
+          p.footer__time-time пн-пт
+            span 9:00 – 20:00
+            |сб-вс
+            span 10:00 – 18:00
+            p.footer__time-address г. Санкт - Петербург ,ул. Тамбасова д.7
+          +social-bar()
+
+
