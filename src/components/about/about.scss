@@ -16,7 +16,12 @@
 
     &--garant {
         &::before {
-            background-image: url("../images/sprite.svg#guarantee");
+            background-image: url("./../images/sprite.svg#guarantee");
         }
     }
+}
+
+.about__subitem-item span {
+  color: $amaranth;
+  font-weight: 600;
 }

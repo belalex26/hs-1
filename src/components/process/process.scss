@@ -1,1 +1,18 @@
-.process__list {}
+.process__list {
+  counter-reset: myCounter;
+}
+
+.process__item {
+  position: relative;
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    color: $amaranth;
+    opacity: 0.2;
+    font-size: 70px;
+
+  }
+}
