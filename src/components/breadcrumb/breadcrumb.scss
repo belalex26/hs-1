@@ -1,0 +1,24 @@
+.breadcrumb__list {
+    padding-left: 0;
+    display: flex;
+    border-top: 1px solid $whisper;
+    border-bottom: 1px solid $whisper;
+}
+
+.breadcrumb__link {
+    padding: 20px;
+}
+
+.breadcrumb__item--active {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: url("../images/sprite.svg#right-arrow");
+        top: 0;
+        left: -11px;
+    }
+}

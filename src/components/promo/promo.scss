@@ -1,0 +1,48 @@
+.promo__text {
+    line-height: 30px;
+}
+
+.promo__text span {
+    color: $amaranth;
+}
+
+.promo__content {
+    display: grid;
+    grid-template-columns: 52% auto;
+    grid-template-rows: 150px auto;
+}
+
+.promo__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 63px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.promo__title span {
+    display: block;
+    text-transform: uppercase;
+    color: $amaranth;
+    font-weight: 800;
+}
+
+.promo__item {
+    position: relative;
+    padding: 10px 40px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: 1px solid $tahitiGold;
+        background-color: $tahitiGold;
+        top: 40%;
+        left: 20px;
+
+    }
+}

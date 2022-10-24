@@ -1,3 +1,39 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  color: $basic-black;
+  font-family: $font-family-primary, $font-family-secondary, sans-serif;
+  font-size: 16px;
+  background-color: $basic-white;
+}
+
 ul {
   list-style: none;
+  padding-left: 0;
+}
+
+a {
+  font-family: $font-family-primary, $font-family-secondary, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: $font-family-primary, $font-family-secondary, sans-serif;
 }
