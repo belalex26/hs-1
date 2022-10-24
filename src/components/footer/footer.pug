@@ -29,19 +29,25 @@ mixin footer()
   footer.footer
     .container
       .footer__content
-        section.footer__catalog
-          +section-title("Каталог")
+        .footer__catalog
+          p.footer__catalog-title.footer__title Каталог
           +list-data(catalogs)
-        section.footer__info
-          +section-title("Информация")
+        .footer__info
+          p.footer__info-title.footer__title Информация
           +list-data(info)
-        section.footer__time
-          +section-title("Время работы")
-          p.footer__time-time пн-пт
-            span 9:00 – 20:00
+        .footer__time
+          p.footer__info-title.footer__title Время работы
+          p.footer__time-time
+            svg.header__favorites-icon(width="15" height="15")
+              use(xlink:href="./assets/images/sprite.svg#wall-clock")
+            |пн-пт
+            span &#160;9:00 – 20:00&#160;
             |сб-вс
-            span 10:00 – 18:00
-            p.footer__time-address г. Санкт - Петербург ,ул. Тамбасова д.7
+            span &#160;10:00 – 18:00
+            p.footer__time-address
+              svg.header__favorites-icon(width="17" height="17")
+                use(xlink:href="./assets/images/sprite.svg#map")
+              |г. Санкт - Петербург, ул. Тамбасова д.7
           +social-bar()
 
 

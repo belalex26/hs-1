@@ -3,3 +3,86 @@
   grid-template-columns: (repeat(4, 290px));
   gap: 30px;
 }
+
+.gallery__item {
+  display: grid;
+  position: relative;
+  width: 282px;
+  height: 260px;
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: $transparent;
+    border-top: 4px solid $paradiso;
+    border-right: 4px solid $paradiso;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: $transparent;
+    border-bottom: 4px solid $paradiso;
+    border-left: 4px solid $paradiso;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.gallery__item-link {
+  position: relative;
+}
+
+.gallery__item-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+
+.gallery__item-overlay {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  display: none;
+  overflow: hidden;
+}
+
+.gallery__item-button {
+  background: $tealBlue;
+  border-radius: 4px;
+  font-weight: 700;
+  color: $basic-white;
+  border: 1px solid $tealBlue;
+  padding: 17px 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+    outline: none;
+  }
+}
+
+.gallery__item-link:hover .gallery__item-img,
+.gallery__item-link:focus .gallery__item-img,
+.gallery__item-link:active .gallery__item-img {
+  filter: blur(5px);
+}
+
+.gallery__item-link:hover .gallery__item-overlay,
+.gallery__item-link:focus .gallery__item-overlay,
+.gallery__item-link:active .gallery__item-overlay {
+  overflow: visible;
+  display: block;
+} 

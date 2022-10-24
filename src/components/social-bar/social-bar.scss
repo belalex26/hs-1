@@ -5,3 +5,18 @@
 .social-bar__link {
     padding: 10px;
 }
+
+.social-bar__icon {
+    fill: $paradiso;
+}
+
+.social-bar__link:hover .social-bar__icon,
+.social-bar__link:focus .social-bar__icon,
+.social-bar__link:active .social-bar__icon {
+    opacity: 0.5;
+    outline: none;
+}
+
+.social-bar--orange .social-bar__icon {
+    fill: $tahitiGold;
+}

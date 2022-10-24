@@ -6,7 +6,8 @@ mixin feedback()
     .container
       h3.feedback__title необходима консультация?
       p.feedback__subtitle оставьте заявку или свяжитесь с нами в социальных сетях
-      +social-bar()
+      .feedback__social-bar
+        +social-bar("orange")
       form.feedback__form
         p.feedback__form-text-main Для
           span &#160;консультации&#160;

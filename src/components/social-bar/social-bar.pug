@@ -1,6 +1,6 @@
-mixin social-bar()
+mixin social-bar(style)
 
-  ul.social-bar
+  ul(class=`social-bar social-bar--${style}`)
     li.social-bar__item
       a.social-bar__link(href="#" aria-label="вконтакте")
         svg.social-bar__icon.social-bar__icon--vk(width="23" height="18")

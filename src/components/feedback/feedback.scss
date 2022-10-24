@@ -45,11 +45,18 @@
 .feedback__form-input {
   width: 240px;
   height: 56px;
-  border: 1px solid #E5E5E5;
+  border: 1px solid $whisper;
   border-radius: 4px;
 
   &::-webkit-input-placeholder {
-    color: #B1B1B1;
+    color: $darkGray;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid $tealBlue;
+    outline: none;
   }
 }
 
@@ -60,4 +67,12 @@
   color: $basic-white;
   border: 1px solid $tealBlue;
   padding: 17px 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+    outline: none;
+  }
 }

@@ -1,3 +1,32 @@
+.footer {
+  background-color: $nordic;
+}
+
 .footer__content {
   display: flex;
+  color: $basic-white;
+}
+
+.footer__title {
+  color: $basic-white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.footer__catalog ul li a,
+.footer__info ul li a {
+  font-size: 14px;
+  line-height: 17px;
+  color: $basic-white;
+}
+
+.footer__time-time {
+  color: $paradiso;
+}
+
+.footer__time-time span {
+  font-size: 14px;
+  color: $basic-white;
 }
