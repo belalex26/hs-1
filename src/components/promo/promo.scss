@@ -4,6 +4,10 @@
     @media screen and (max-width: $desktop-width) {
       padding-top: 64px;
     }
+
+    @media screen and (max-width: $tablet-width) {
+      padding-top: 24px;
+    }
 }
 
 .promo__text {
@@ -13,6 +17,12 @@
     @media screen and (max-width: $desktop-width) {
       padding-left: 10px;
       margin-bottom: 13px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+      padding-left: 0px;
+      font-size: 13.4px;
+      line-height: 26px;
     }
 }
 
@@ -42,6 +52,12 @@
       font-size: 30px;
       padding-left: 10px;
     }
+
+    @media screen and (max-width: $tablet-width) {
+      padding-left: 0;
+      margin-top: 19px;
+      font-size: 18px;
+    }
 }
 
 .promo__title span {
@@ -55,6 +71,11 @@
     @media screen and (max-width: $desktop-width) {
       font-size: 40px;
       line-height: 35px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 4px;
     }
 }
 
@@ -73,6 +94,11 @@
       margin-top: -35px;
       padding-left: 13px;
     }
+
+    @media screen and (max-width: $tablet-width) {
+      padding-left: 0;
+      margin-top: -43px;
+    }
 }
 
 .promo__item {
@@ -90,7 +116,11 @@
         background-color: $tahitiGold;
         top: 42%;
         left: 14px;
+    }
 
+    @media screen and (max-width: $tablet-width) {
+      font-size: 14px;
+      padding: 10px 0 15px 40px ;
     }
 }
 

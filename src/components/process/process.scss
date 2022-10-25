@@ -5,6 +5,11 @@
     padding-top: 38px;
     padding-left: 5px;
   }
+
+  @media screen and (max-width: $tablet-width) {
+    padding-top: 14px;
+    padding-left: 0;
+  }
 }
 
 .process__list {
@@ -25,6 +30,12 @@
     padding-left: 43px;
     margin-top: 24px;
 
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    display: block;
+    margin-top: 0;
+    padding-left: 48px;
   }
 }
 
@@ -56,6 +67,16 @@
       left: -39px;
     }
   }
+
+  @media screen and (max-width: $tablet-width) {
+    padding-top: 16px;
+    line-height: 26px;
+
+    &::before {
+      font-size: 45px;
+      top: 28px;
+    }
+  }
 }
 
 .process__item:nth-of-type(2) {
@@ -68,6 +89,10 @@
     &::before {
       top: 19px;
     }
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    padding-top: 10px;
   }
 }
 

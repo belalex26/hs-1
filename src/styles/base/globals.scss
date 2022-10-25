@@ -32,7 +32,11 @@ a {
   margin: 0 auto;
 
   @media screen and (max-width: $desktop-width) {
-    max-width: 98%;
+    max-width: 752px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    max-width: 290px;
   }
 }
 
@@ -47,5 +51,11 @@ a {
   @media screen and (max-width: $desktop-width) {
     font-size: 45px;
     padding-left: 15px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    font-size: 30px;
+    margin-top: 43px;
+    width: 80%;
   }
 }

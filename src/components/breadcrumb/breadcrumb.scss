@@ -11,6 +11,13 @@
     @media screen and (max-width: $desktop-width) {
       padding: 7px 0px 14px 0px;
     }
+
+    @media screen and (max-width: $tablet-width) {
+      margin-top: 13px;
+      padding-top: 9px;
+    }
+
+
 }
 
 .breadcrumb__icon {

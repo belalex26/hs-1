@@ -23,4 +23,13 @@
       }
     }
 
+    @media screen and (max-width: $tablet-width) {
+      font-size: 19.5px;
+      line-height: 32px;
+
+      &::before {
+        top: -14px;
+      }
+    }
+
 }

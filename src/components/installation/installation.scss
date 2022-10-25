@@ -6,6 +6,11 @@
       margin-top: 68px;
     }
 
+    @media screen and (max-width: $tablet-width) {
+      padding-left: 0;
+      margin-top: 17px;
+    }
+
 }
 
 .installation__text {
@@ -15,6 +20,11 @@
 
     @media screen and (max-width: $desktop-width) {
       margin-top: 30px;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 26px;
     }
 }
 
@@ -29,6 +39,10 @@
 
     @media screen and (max-width: $desktop-width) {
       background: none;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+      min-height: 220px;
     }
 }
 
@@ -45,6 +59,12 @@
     left: 0px;
     top: 59px;
     min-height: 420px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    left: 2px;
+    top: 19px;
+    min-height: 163px;
   }
 
 }
