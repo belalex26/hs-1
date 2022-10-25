@@ -1,5 +1,10 @@
+.promo {
+    padding-top: 82px;
+}
+
 .promo__text {
     line-height: 30px;
+    margin-top: 0;
 }
 
 .promo__text span {
@@ -16,10 +21,12 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 63px;
+    margin-bottom: 0;
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
+    z-index: 5;
 }
 
 .promo__title span {
@@ -27,11 +34,24 @@
     text-transform: uppercase;
     color: $amaranth;
     font-weight: 800;
+    font-size: 50px;
+    line-height: 57px;
+}
+
+.promo__list {
+    margin-top: 31px;
+    padding-left: 15px;
+    z-index: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .promo__item {
     position: relative;
-    padding: 10px 40px;
+    padding: 12px 40px;
+    line-height: 24px;
 
     &::before {
         position: absolute;
@@ -41,14 +61,31 @@
         border-radius: 50%;
         border: 1px solid $tahitiGold;
         background-color: $tahitiGold;
-        top: 40%;
-        left: 20px;
+        top: 42%;
+        left: 14px;
 
     }
 }
 
 .promo__img-content {
-    width: 1381px;
-    height: 573.54px;
+    position: relative;
+    min-height: 573.54px;
     background: url("../images/blob-big.svg") no-repeat  center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    z-index: 2;
+    justify-self: end;
+    width: 71%;
+    justify-self: end;
+    padding-top: 0px;
+    margin-top: 28px;
+    margin-right: -210px;
+}
+
+.promo__img-img {
+    position: absolute;
+    top: -32px;
+    left: 24%;
 }

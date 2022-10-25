@@ -3,8 +3,17 @@
     display: flex;
     border-top: 1px solid $whisper;
     border-bottom: 1px solid $whisper;
+    font-size: 12px;
+    padding: 15px 0px 17px 0px;
+    margin-top: 41px;
+    margin-bottom: 0;
+}
+
+.breadcrumb__icon {
+    margin-right: 6px;
 }
 
 .breadcrumb__link {
-    padding: 20px;
+    padding: 20px 5px 20px 0px;
+    font-size: 12px;
 }

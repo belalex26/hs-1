@@ -1,13 +1,29 @@
+.gallery {
+  margin-top: 180px;
+  padding-bottom: 142px;
+}
+
+.gallery__text {
+  margin-bottom: 0px;
+  margin-top: 66px;
+  line-height: 31px;
+}
+
 .gallery__list {
   display: grid;
-  grid-template-columns: (repeat(4, 290px));
-  gap: 30px;
+  grid-template-columns: repeat(4, 298px);
+  column-gap: 14px;
+  row-gap: 30px;
+  margin-bottom: 0px;
+  margin-top: 39px;
+  padding-left: 0px;
+  margin-left: -7px;
 }
 
 .gallery__item {
   display: grid;
   position: relative;
-  width: 282px;
+  width: 298px;
   height: 260px;
   z-index: 2;
 
@@ -19,8 +35,8 @@
     background-color: $transparent;
     border-top: 4px solid $paradiso;
     border-right: 4px solid $paradiso;
-    top: 0;
-    right: 0;
+    top: 6px;
+    right: 8px;
     z-index: 3;
   }
 
@@ -32,8 +48,8 @@
     background-color: $transparent;
     border-bottom: 4px solid $paradiso;
     border-left: 4px solid $paradiso;
-    bottom: 0;
-    left: 0;
+    bottom: -6px;
+    left: 8px;
   }
 }
 
@@ -51,7 +67,7 @@
 
 .gallery__item-overlay {
   position: absolute;
-  top: 40%;
+  top: 43%;
   left: 30%;
   display: none;
   overflow: hidden;

@@ -5,23 +5,23 @@ include ../social-bar/social-bar
 -
   var catalogs = [
     { url: "/mock-address", text: "Дымоходы" },
-    { url: "/mock-address", text: "Дымососы" },
-    { url: "/mock-address", text: "Печи для дома" },
-    { url: "/mock-address", text: "Печи для бани" },
     { url: "/mock-address", text: "Камины" },
+    { url: "/mock-address", text: "Дымососы" },
     { url: "/mock-address", text: "Силикат кальция" },
+    { url: "/mock-address", text: "Печи для дома" },
     { url: "/mock-address", text: "Котлы" },
+    { url: "/mock-address", text: "Печи для бани" },
     { url: "/mock-address", text: "Ещё" },
   ];
 -
   var info = [
     { url: "/mock-address", text: "Каталог" },
-    { url: "/mock-address", text: "Установка и монтаж" },
-    { url: "/mock-address", text: "Отзывы" },
-    { url: "/mock-address", text: "Ликвидация товара" },
     { url: "/mock-address", text: "Полезное" },
+    { url: "/mock-address", text: "Установка и монтаж" },
     { url: "/mock-address", text: "Контакты" },
+    { url: "/mock-address", text: "Отзывы" },
     { url: "/mock-address", text: "Оплата и доставка" },
+    { url: "/mock-address", text: "Ликвидация товара" },
   ];
 
 mixin footer()
@@ -36,18 +36,18 @@ mixin footer()
           p.footer__info-title.footer__title Информация
           +list-data(info)
         .footer__time
-          p.footer__info-title.footer__title Время работы
+          p.footer__time-title.footer__title Время работы
           p.footer__time-time
-            svg.header__favorites-icon(width="15" height="15")
+            svg.footer__time-icon(width="18" height="18")
               use(xlink:href="./assets/images/sprite.svg#wall-clock")
-            |пн-пт
+            |пн-пт&#160;
             span &#160;9:00 – 20:00&#160;
             |сб-вс
             span &#160;10:00 – 18:00
             p.footer__time-address
-              svg.header__favorites-icon(width="17" height="17")
+              svg.footer__map-icon(width="17" height="17")
                 use(xlink:href="./assets/images/sprite.svg#map")
-              |г. Санкт - Петербург, ул. Тамбасова д.7
+              |г. Санкт - Петербург,   ул. Тамбасова д.7
           +social-bar()
 
 

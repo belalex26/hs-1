@@ -1,3 +1,24 @@
 .installation {
+    margin-top: 125px;
+}
+
+.installation__text {
+    line-height: 30px;
+    margin-top: 66px;
+    margin-bottom: 0;
+}
+
+.installation__video-wrapper {
     background: url("../images/blob-orange.svg") no-repeat center;
+    margin-top: 34px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.installation__video {
+    display: block;
+    width: 771px;
+    min-height: 438px;
+
 }

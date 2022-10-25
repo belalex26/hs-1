@@ -3,7 +3,7 @@
 }
 
 .social-bar__link {
-    padding: 10px;
+    padding: 2.5px;
 }
 
 .social-bar__icon {
@@ -19,4 +19,8 @@
 
 .social-bar--orange .social-bar__icon {
     fill: $tahitiGold;
+}
+
+.social-bar--orange .social-bar__link {
+    padding: 16.5px;
 }

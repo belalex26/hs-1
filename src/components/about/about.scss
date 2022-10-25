@@ -1,5 +1,19 @@
+.about {
+    padding-top: 61px;
+}
+
+.about__text {
+    margin-top: 52px;
+    line-height: 29px;
+    padding-left: 4px;
+}
+
 .about__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 51px;
+    grid-auto-flow: row;
+    margin-top: 51px;
 }
 
 .about__item {
@@ -19,6 +33,22 @@
             background-image: url("./../images/sprite.svg#guarantee");
         }
     }
+}
+
+.about__title {
+    font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.about__item-text {
+    width: 118%;
+    line-height: 29px;
+    margin-top: -5px;
+}
+
+.about__subitem-item {
+    margin-bottom: 11px;
 }
 
 .about__subitem-item span {

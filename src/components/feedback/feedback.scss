@@ -1,14 +1,34 @@
+.feedback {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 66px;
+}
+
 .feedback__title {
   font-weight: 800;
   font-size: 50px;
   line-height: 40px;
   text-transform: uppercase;
+  margin: 0px;
+  letter-spacing: 0.5px;
 }
 
 .feedback__subtitle {
   font-weight: 300;
   font-size: 22px;
   line-height: 40px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.feedback__social-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 19px;
 }
 
 .feedback__form {
@@ -18,6 +38,10 @@
   gap: 16px;
   width: 866px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+  margin-top: 17px;
+  margin-left: 19px;
+  padding-left: 59px;
+  padding-bottom: 60px;
 }
 
 .feedback__form-text-main {
@@ -28,10 +52,13 @@
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: -1;
+  margin-bottom: 0px;
+  margin-top: 57px;
 }
 
 .feedback__form-text-main span {
   color: $tahitiGold;
+  font-weight: 700;
 }
 
 .feedback__form-text {
@@ -40,6 +67,8 @@
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: -1;
+  margin-bottom: 0px;
+  margin-top: -3px;
 }
 
 .feedback__form-input {
@@ -47,9 +76,14 @@
   height: 56px;
   border: 1px solid $whisper;
   border-radius: 4px;
+  margin-left: 5px;
+  margin-top: 4px;
+  padding-left: 17px;
+  font-size: 15px;
 
   &::-webkit-input-placeholder {
     color: $darkGray;
+    font-weight: 500;
   }
 
   &:hover,
@@ -60,6 +94,10 @@
   }
 }
 
+.feedback__form-input--phone {
+  margin-left: 0;
+}
+
 .feedback__form-button {
   background: $tealBlue;
   border-radius: 4px;
@@ -68,6 +106,8 @@
   border: 1px solid $tealBlue;
   padding: 17px 0;
   cursor: pointer;
+  margin-top: 5px;
+  font-size: 18px;
 
   &:hover,
   &:focus,

@@ -28,7 +28,7 @@ a {
 }
 
 .container {
-  max-width: 1900px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
@@ -36,4 +36,7 @@ a {
   font-size: 60px;
   font-weight: 700;
   font-family: $font-family-primary, $font-family-secondary, sans-serif;
+  padding-left: 351px;
+  margin-top: 57px;
+  margin-bottom: 0;
 }

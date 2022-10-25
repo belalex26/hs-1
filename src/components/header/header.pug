@@ -2,33 +2,32 @@ include ../social-bar/social-bar
 
 mixin header()
   header.header
-    .container
-      .header__container
-        img.header__logo(src="./assets/images/logo.svg", alt="Дымоход.ру" width="100" height="97")
-        button.header__btn-menu.header__button
-          span
-        nav.header__menu
-          ul.header__menu-list
-            li.header__menu-item
-              a.header__menu-link(href="#") Каталог товаров
-            li.header__menu-item
-              a.header__menu-link(href="#") доставка и оплата
-            li.header__menu-item
-              a.header__menu-link(href="#") Цены
-            li.header__menu-item
-              a.header__menu-link(href="#") Контакты
-          a.header__tel(href="tel:+78125092198") +7 (812)
-            span 509 21 98
-          a.header__feedback(href="#") перезвоните мне
-          .header__social-bar
-            +social-bar()
-        button.header__search.header__button(aria-label="Поиск")
-          svg.header__search-icon(width="23" height="23")
-            use(xlink:href="./assets/images/sprite.svg#loupe")
-        button.header__favorites.header__button(aria-label="Избранное")
-          svg.header__favorites-icon(width="23" height="23")
-            use(xlink:href="./assets/images/sprite.svg#heart")
-        button.header__basket.header__button(aria-label="Корзина")
-          svg.header__basket-icon(width="23" height="23")
-            use(xlink:href="./assets/images/sprite.svg#shopping-cart")
+    .header__container
+      img.header__logo(src="./assets/images/logo.svg", alt="Дымоход.ру" width="100" height="97")
+      button.header__btn-menu
+        span
+      nav.header__menu
+        ul.header__menu-list
+          li.header__menu-item
+            a.header__menu-link(href="#") Каталог товаров
+          li.header__menu-item
+            a.header__menu-link(href="#") доставка и оплата
+          li.header__menu-item
+            a.header__menu-link(href="#") Цены
+          li.header__menu-item
+            a.header__menu-link(href="#") Контакты
+        a.header__tel(href="tel:+78125092198") +7 (812)
+          span &#160;509 21 98
+        a.header__feedback(href="#") перезвоните мне
+        .header__social-bar
+          +social-bar()
+      button.header__search.header__button(aria-label="Поиск")
+        svg.header__search-icon(width="23" height="23")
+          use(xlink:href="./assets/images/sprite.svg#loupe")
+      button.header__favorites.header__button(aria-label="Избранное")
+        svg.header__favorites-icon(width="23" height="23")
+          use(xlink:href="./assets/images/sprite.svg#heart")
+      button.header__basket.header__button(aria-label="Корзина")
+        svg.header__basket-icon(width="23" height="23")
+          use(xlink:href="./assets/images/sprite.svg#shopping-cart")
 
