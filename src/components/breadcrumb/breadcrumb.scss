@@ -7,6 +7,10 @@
     padding: 15px 0px 17px 0px;
     margin-top: 41px;
     margin-bottom: 0;
+
+    @media screen and (max-width: $desktop-width) {
+      padding: 7px 0px 14px 0px;
+    }
 }
 
 .breadcrumb__icon {
@@ -16,4 +20,8 @@
 .breadcrumb__link {
     padding: 20px 5px 20px 0px;
     font-size: 12px;
+
+    @media screen and (max-width: $desktop-width) {
+      padding: 0;
+    }
 }

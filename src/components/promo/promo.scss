@@ -1,10 +1,19 @@
 .promo {
     padding-top: 82px;
+
+    @media screen and (max-width: $desktop-width) {
+      padding-top: 64px;
+    }
 }
 
 .promo__text {
     line-height: 30px;
     margin-top: 0;
+
+    @media screen and (max-width: $desktop-width) {
+      padding-left: 10px;
+      margin-bottom: 13px;
+    }
 }
 
 .promo__text span {
@@ -27,6 +36,12 @@
     grid-row-start: 1;
     grid-row-end: 2;
     z-index: 5;
+
+    @media screen and (max-width: $desktop-width) {
+      margin-top: 0;
+      font-size: 30px;
+      padding-left: 10px;
+    }
 }
 
 .promo__title span {
@@ -36,6 +51,11 @@
     font-weight: 800;
     font-size: 50px;
     line-height: 57px;
+
+    @media screen and (max-width: $desktop-width) {
+      font-size: 40px;
+      line-height: 35px;
+    }
 }
 
 .promo__list {
@@ -46,6 +66,13 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    @media screen and (max-width: $desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      margin-top: -35px;
+      padding-left: 13px;
+    }
 }
 
 .promo__item {
@@ -82,10 +109,14 @@
     padding-top: 0px;
     margin-top: 28px;
     margin-right: -210px;
+
+    @media screen and (max-width: $desktop-width) {
+      display: none;
+    }
 }
 
 .promo__img-img {
     position: absolute;
-    top: -32px;
-    left: 24%;
+    top: -26px;
+    left: 26%;
 }

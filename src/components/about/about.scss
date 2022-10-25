@@ -1,11 +1,22 @@
 .about {
     padding-top: 61px;
+
+    @media screen and (max-width: $desktop-width) {
+     width: 100%;
+     padding-left: 10px;
+     padding-top: 49px;
+    }
 }
 
 .about__text {
     margin-top: 52px;
     line-height: 29px;
     padding-left: 4px;
+
+    @media screen and (max-width: $desktop-width) {
+      margin-top: 31px;
+      padding-left: 0px;
+    }
 }
 
 .about__list {
@@ -14,44 +25,103 @@
     gap: 51px;
     grid-auto-flow: row;
     margin-top: 51px;
+
+    @media screen and (max-width: $desktop-width) {
+      grid-template-columns: repeat(2, 45%);
+      column-gap: 62px;
+      row-gap: 20px;
+    }
 }
 
 .about__item {
     position: relative;
 
-    &::before {
-        position: absolute;
-        content: "";
-        width: 79px;
-        height: 79px;
-        top: 0;
-        left: 0;
+    @media screen and (max-width: $desktop-width) {
+      text-align: center;
     }
+}
 
-    &--garant {
-        &::before {
-            background-image: url("./../images/sprite.svg#guarantee");
-        }
-    }
+.about__item-icon {
+
+  @media screen and (max-width: $desktop-width) {
+    margin-left: 11px;
+  }
 }
 
 .about__title {
     font-size: 20px;
     margin-top: 32px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: $desktop-width) {
+      margin-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 9px;
+      font-size: 18px;
+    }
 }
 
 .about__item-text {
     width: 118%;
     line-height: 29px;
     margin-top: -5px;
+
+    @media screen and (max-width: $desktop-width) {
+      width: 100%;
+      font-size: 14px;
+      padding-left: 0px;
+      margin-left: 12px;
+      margin-bottom: 0;
+      line-height: 27px;
+    }
+
 }
 
 .about__subitem-item {
     margin-bottom: 11px;
+
+    @media screen and (max-width: $desktop-width) {
+      font-size: 12px;
+    }
 }
 
 .about__subitem-item span {
   color: $amaranth;
   font-weight: 600;
+
+  @media screen and (max-width: $desktop-width) {
+    font-size: 14px;
+  }
+}
+
+.about__item:nth-of-type(2) {
+
+  @media screen and (max-width: $desktop-width) {
+    margin-left: -22px;
+  }
+}
+
+.about__item:nth-of-type(3) {
+
+  @media screen and (max-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    justify-self: center;
+  }
+}
+
+.about__item:nth-of-type(3) .about__title {
+
+  @media screen and (max-width: $desktop-width) {
+    margin-top: 24px;
+    margin-left: 4px;
+  }
+}
+
+.about__item:nth-of-type(3) .about__item-text {
+
+  @media screen and (max-width: $desktop-width) {
+    width: 47%;
+    margin-left: 202px;
+  }
 }

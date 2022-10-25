@@ -6,13 +6,28 @@
 .header__container {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 1920px;
+    margin: 0 auto;
     padding-top: 28px;
     padding-left: 63px;
+    position: relative;
+
+    @media screen and (max-width: $desktop-width) {
+      padding-left: 8px;
+      border-bottom: 1px solid $whisper;
+      padding-bottom: 21px;
+      width: 98%;
+    }
 }
 
 .header__logo {
     margin-right: 53px;
+
+    @media screen and (max-width: $desktop-width) {
+      width: 64px;
+      height: 62px;
+      margin-right: 377px;
+    }
 }
 
 .header__btn-menu {
@@ -26,6 +41,12 @@
     align-items: center;
     justify-content: center;
     margin-right: 12px;
+
+    @media screen and (max-width: $desktop-width) {
+      order: 5;
+      margin-right: 0;
+      margin-left: 4px;
+    }
 }
 
 .header__btn-menu span,
@@ -56,6 +77,11 @@
 .header__menu {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: $desktop-width) {
+      position: absolute;
+      display: none;
+    }
 }
 
 .header__menu-list {
@@ -127,9 +153,13 @@
         opacity: 0.5;
         outline: none;
     }
+
+    @media screen and (max-width: $desktop-width) {
+      margin-right: 25px;
+    }
 }
 
-.header__feedback, 
+.header__feedback,
 .header__tel {
     &:hover,
     &:focus,

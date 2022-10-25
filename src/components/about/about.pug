@@ -6,8 +6,8 @@ mixin about()
       +section-title("Почему Дымоход.ру?")
       p.about__text В отличие от других производителей, мы ручаемся за качество продукции, т.к. все Дымоходы изготавливаются из качественной стали, проверенного теплоизолятора, по современной технологии плазменной сварки «встык»
       ul.about__list
-        li.about__item.about__item--garant
-          svg.header__favorites-icon(width="79" height="79")
+        li.about__item
+          svg.about__item-icon(width="79" height="79")
             use(xlink:href="./assets/images/sprite.svg#guarantee")
           h3.about__title Большой гарантийный срок
           ul.about__subitem-list
@@ -18,14 +18,14 @@ mixin about()
             li.about__subitem-item Гидроизоляция –
               span &#160;3 года
         li.about__item
-          svg.header__favorites-icon(width="79" height="79")
+          svg.about__item-icon(width="79" height="79")
             use(xlink:href="./assets/images/sprite.svg#architect")
           h3.about__title Помощь в покупке агрегата
           p.about__item-text (печи, камина, котла), а также качественной&ensp;
             |установке на объекте с последующим
             |гарантийным сервисом
         li.about__item
-          svg.header__favorites-icon(width="79" height="79")
+          svg.about__item-icon(width="79" height="79")
             use(xlink:href="./assets/images/sprite.svg#review")
           h3.about__title Реальные отзывы клиентов
           p.about__item-text Убедитесь в добросовестности исполнения,&ensp;

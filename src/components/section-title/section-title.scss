@@ -14,4 +14,13 @@
         left: 0px;
         top: -16px;
     }
+
+    @media screen and (max-width: $desktop-width) {
+      font-size: 30px;
+
+      &::before {
+        top: -11px;
+      }
+    }
+
 }

@@ -30,6 +30,10 @@ a {
 .container {
   max-width: 1220px;
   margin: 0 auto;
+
+  @media screen and (max-width: $desktop-width) {
+    max-width: 98%;
+  }
 }
 
 .main__title {
@@ -39,4 +43,9 @@ a {
   padding-left: 351px;
   margin-top: 57px;
   margin-bottom: 0;
+
+  @media screen and (max-width: $desktop-width) {
+    font-size: 45px;
+    padding-left: 15px;
+  }
 }

@@ -1,11 +1,21 @@
 .footer {
   background-color: $nordic;
   padding-top: 65px;
+
+  @media screen and (max-width: $desktop-width) {
+    padding-top: 0px;
+    margin-top: -6px;
+  }
 }
 
 .footer__content {
   display: flex;
   color: $basic-white;
+
+  @media screen and (max-width: $desktop-width) {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .footer__title {
@@ -19,6 +29,10 @@
 
 .footer__catalog {
   width: 417px;
+
+  @media screen and (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .footer__catalog ul {
@@ -44,6 +58,10 @@
 .footer__info {
   width: 400px;
   padding-left: 22px;
+
+  @media screen and (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .footer__info ul {
@@ -62,6 +80,10 @@
 
 .footer__time-title {
   margin-left: -15px;
+
+  @media screen and (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .footer__time-icon,
@@ -75,8 +97,11 @@
   margin-right: 20px;
   font-size: 12px;
   margin-bottom: 0;
-}
 
+  @media screen and (max-width: $desktop-width) {
+    display: none;
+  }
+}
 
 .footer__time-time span {
   font-size: 14px;
@@ -87,8 +112,12 @@
 .footer__time-address {
   font-size: 14px;
   align-self: center;
-  margin-left: 43px;
+  margin-left: 83px;
   margin-bottom: 0;
+
+  @media screen and (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .footer__time ul {

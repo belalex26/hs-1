@@ -5,6 +5,11 @@
   flex-direction: column;
   align-items: center;
   padding-top: 66px;
+
+  @media screen and (max-width: $desktop-width) {
+    width: 100%;
+    padding-top: 29px;
+  }
 }
 
 .feedback__title {
@@ -14,6 +19,11 @@
   text-transform: uppercase;
   margin: 0px;
   letter-spacing: 0.5px;
+
+  @media screen and (max-width: $desktop-width) {
+    font-size: 38px;
+    text-align: center;
+  }
 }
 
 .feedback__subtitle {
@@ -23,12 +33,21 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 0px;
+
+  @media screen and (max-width: $desktop-width) {
+    font-size: 16px;
+    margin-top: 0;
+  }
 }
 
 .feedback__social-bar {
   display: flex;
   justify-content: center;
   margin-top: 19px;
+
+  @media screen and (max-width: $desktop-width) {
+    margin-top: 8px;
+  }
 }
 
 .feedback__form {
@@ -42,6 +61,17 @@
   margin-left: 19px;
   padding-left: 59px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: $desktop-width) {
+    width: 738px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 12px;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
 }
 
 .feedback__form-text-main {
@@ -54,6 +84,12 @@
   grid-column-end: -1;
   margin-bottom: 0px;
   margin-top: 57px;
+
+  @media screen and (max-width: $desktop-width) {
+    margin-top: 29px;
+    text-align: center;
+    margin-left: -47px;
+  }
 }
 
 .feedback__form-text-main span {
@@ -92,10 +128,19 @@
     border: 1px solid $tealBlue;
     outline: none;
   }
+
+  @media screen and (max-width: $desktop-width) {
+    margin-left: -62px;
+    width: 351px;
+  }
 }
 
 .feedback__form-input--phone {
   margin-left: 0;
+
+  @media screen and (max-width: $desktop-width) {
+    margin-left: -62px;
+  }
 }
 
 .feedback__form-button {
@@ -114,5 +159,11 @@
   &:active {
     opacity: 0.5;
     outline: none;
+  }
+
+  @media screen and (max-width: $desktop-width) {
+    width: 240px;
+    margin-left: -61px;
+
   }
 }

@@ -1,24 +1,50 @@
 .installation {
     margin-top: 125px;
+
+    @media screen and (max-width: $desktop-width) {
+      padding-left: 10px;
+      margin-top: 68px;
+    }
+
 }
 
 .installation__text {
     line-height: 30px;
     margin-top: 66px;
     margin-bottom: 0;
+
+    @media screen and (max-width: $desktop-width) {
+      margin-top: 30px;
+    }
 }
 
 .installation__video-wrapper {
+  position: relative;
     background: url("../images/blob-orange.svg") no-repeat center;
-    margin-top: 34px;
+    margin-top: 3px;
     width: 100%;
+    min-height: 500px;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: $desktop-width) {
+      background: none;
+    }
 }
 
 .installation__video {
-    display: block;
-    width: 771px;
-    min-height: 438px;
+  position: absolute;
+  top: 94px;
+  left: 215px;
+  display: block;
+  width: 771px;
+  min-height: 438px;
+
+  @media screen and (max-width: $desktop-width) {
+    width: 99%;
+    left: 0px;
+    top: 59px;
+    min-height: 420px;
+  }
 
 }
