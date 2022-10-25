@@ -2,7 +2,7 @@ include ../section-title/section-title
 include ../social-bar/social-bar
 
 mixin feedback()
-  .feedback
+  section.feedback(id="feedback")
     .container
       h3.feedback__title необходима консультация?
       p.feedback__subtitle оставьте заявку или свяжитесь с нами в социальных сетях
@@ -14,9 +14,9 @@ mixin feedback()
           | заполните форму!
         p.feedback__form-text C Вами свяжутся в ближайшее время
         label.feedback__form-label
-          input.feedback__form-input(type="text", placeholder="Ваше имя")
+          input.feedback__form-input(type="text", placeholder="Ваше имя", name="name", id="name", data-reg="^[А-ЯЁ][а-яё]*$")
         label.feedback__form-label
-          input.feedback__form-input.feedback__form-input--phone(type="text", placeholder="Ваш телефон")
-        button.feedback__form-button(type="submit") отправить
+          input.feedback__form-input.feedback__form-input--phone(type="tel", placeholder="Ваш телефон", name="phone", id="phone", data-reg="^((\+7|7|8)+([0-9]){10})$")
+        button.feedback__form-button(type="submit", id="button") отправить
 
 

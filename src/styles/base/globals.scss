@@ -29,6 +29,7 @@ a {
 
 .container {
   max-width: 1220px;
+  min-width: $mobile-width;
   margin: 0 auto;
 
   @media screen and (max-width: $desktop-width) {
@@ -36,6 +37,7 @@ a {
   }
 
   @media screen and (max-width: $tablet-width) {
+    min-width: 290px;
     max-width: 290px;
   }
 }

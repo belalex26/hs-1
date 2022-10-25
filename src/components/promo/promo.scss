@@ -118,6 +118,14 @@
         left: 14px;
     }
 
+    @media screen and (max-width: $desktop-width) {
+      padding: 12px 10px 12px 50px;
+
+      &::before {
+        left: 26px;
+      }
+    }
+
     @media screen and (max-width: $tablet-width) {
       font-size: 14px;
       padding: 10px 0 15px 40px ;
